@@ -5,8 +5,11 @@ import (
 	"time"
 )
 
+// Buffered Channel is asynchronous
+// We can write to a buffered channel till the buffer is full
+// This makes buffered channel non blocking
 func main() {
-	message := make(chan string,2) // no buffer
+	message := make(chan string,1) //  Buffered Channel
 	count := 6
 
 	go func() {

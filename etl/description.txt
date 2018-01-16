@@ -1,0 +1,5 @@
+Orders
+orderNumber, partNumber, NoOfUnits
+
+Products
+partNumber, CostPerUnit, RetailPricePerUnit
